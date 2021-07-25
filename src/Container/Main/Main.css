@@ -1,0 +1,14 @@
+.main {
+  display: block;
+  overflow-x: hidden;
+}
+
+@media (min-width: 570px) {
+  .main {
+    display: flex;
+  }
+}
+
+.main > div {
+  height: calc(100vh - 65px);
+}

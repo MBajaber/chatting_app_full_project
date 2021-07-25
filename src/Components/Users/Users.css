@@ -1,0 +1,23 @@
+.users {
+  padding: 20px 5px;
+  border-right: 1px solid whitesmoke;
+  overflow-y: auto;
+  background-color: #fff;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+
+@media (min-width: 570px) {
+  .users {
+    position: relative;
+    max-width: 250px;
+  }
+}
+
+.users .no_users {
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+  color: #dc3545;
+}

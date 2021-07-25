@@ -1,0 +1,39 @@
+.login {
+  height: calc(100vh - 65px);
+  position: relative;
+}
+
+.login .login_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login .login_btn button {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 18px 60px;
+}
+
+@media (max-width: 514px) {
+  .login .login_btn button {
+    padding: 18px 40px;
+  }
+}
+
+.login .login_btn button .text {
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.login .login_btn button img {
+  width: 25px;
+  margin-left: 15px;
+}
+
+@media (max-width: 430px) {
+  .login .login_btn button {
+    padding: 15px 22px;
+  }
+}

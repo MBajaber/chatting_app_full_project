@@ -1,0 +1,164 @@
+.chat {
+  flex-grow: 1;
+  background-color: #f8f9fa;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.chat .no_msg {
+  height: 100%;
+  position: relative;
+}
+
+.chat .no_msg .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  text-align: center;
+}
+
+.chat .no_msg .content .no_msg_image img {
+  max-width: 100%;
+}
+
+.chat .no_msg .content .txt {
+  font-family: "Yomogi", cursive;
+  font-size: 1.8rem;
+}
+
+.chat .message_section {
+  height: calc(100vh - 65px);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat .message_section .header {
+  height: 60px;
+  background-color: #ededed;
+  border-bottom: 1px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 570px) {
+  .chat .message_section .header {
+    justify-content: center;
+  }
+}
+
+.chat .message_section .header .left-arrow {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+@media (min-width: 570px) {
+  .chat .message_section .header .left-arrow {
+    display: none;
+  }
+}
+
+.chat .message_section .header .user_info {
+  display: flex;
+  align-items: center;
+}
+
+.chat .message_section .header .user_info .text {
+  margin-right: 15px;
+  text-align: center;
+}
+
+.chat .message_section .header .user_info .text h4 {
+  color: #1a237e;
+}
+
+.chat .message_section .header .user_info .text span {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.chat .message_section .header .user_info .image {
+  width: 40px;
+  height: 40px;
+}
+
+.chat .message_section .header .user_info .image img {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 1px solid whitesmoke;
+  object-fit: cover;
+}
+
+.chat .message_section .message_content {
+  padding: 20px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.chat .message_section .message_content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat .message_section .message_content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.chat .message_section .message_content::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.5);
+}
+
+.chat .message_section .message_content::-webkit-scrollbar-thumb:hover {
+  background: rgba(136, 136, 136, 0.8);
+}
+
+.chat .message_section .send_msg {
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  z-index: 5;
+}
+
+.chat .message_section .send_msg form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 40px;
+}
+
+.chat .message_section .send_msg form .text-area {
+  margin: 0 20px;
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px 0;
+}
+
+.chat .message_section .send_msg form .text-area textarea {
+  width: 100%;
+  resize: none;
+  padding: 10px 15px;
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 20px;
+  overflow-y: hidden;
+}
+
+.chat .message_section .send_msg form .text-area textarea:focus {
+  outline: 0;
+}
+
+.chat .message_section .send_msg form .send_btn.btn {
+  font-size: 30px;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+
+.chat .message_section .send_msg form .send_btn svg {
+  color: #26c2f0;
+}

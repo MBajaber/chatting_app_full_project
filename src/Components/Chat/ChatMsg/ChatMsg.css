@@ -1,0 +1,45 @@
+.chat_msg {
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+.chat_msg .msg {
+  padding: 15px 15px;
+  border-radius: 0 15px 15px;
+  background-color: #dcf8c6;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.chat_msg .msg .shap {
+  position: absolute;
+  top: -3px;
+  border-width: 10px;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.chat_msg .text_msg {
+  color: #303030;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.chat_msg .time {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.chat_msg .time .show_time {
+  color: #00000073;
+  text-transform: uppercase;
+  margin-right: 10px;
+  font-size: 0.7rem;
+}
+
+.chat_msg .time .check_sign svg {
+  font-size: 1rem;
+}
